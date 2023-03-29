@@ -40,6 +40,22 @@ while (restartGame) {
         rangeNum = parseInt(rangeNum);
     }
 
+    // Create the random number usingthe range number entered by the user
+    rangeNum = Math.floor(Math.random() * rangeNum) + 1;
+    console.log(randomNum);
+    
+    // Prompts user to enter a number of attempts (lives) allowed (e.g. the number of guesses)
+    lives = parseInt(prompt('Please enter a number of attemps allowed:'));
+    console.log(lives);
+
+    // Verifying the user's entry for a number of attemps allowed is a number greater than zero and equal to or less than the range they set
+    while (!lives || lives < 1 || lives > rangeNum) {
+        lives = parseInt(prompt('Please enter a number of attemps allowed:'));
+    }
+
+    // Asks the user to enter a guess in the range of 
+    guess = prompt(`Please enter a guess from 1 to ${rangeNum} You have ${lives} live(s) left.`)
+
 
 
 
