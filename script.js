@@ -21,3 +21,4 @@ let guess;
 
 // For storing the users response to play again or not play again
 let playAgain;
+
