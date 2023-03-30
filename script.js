@@ -53,7 +53,7 @@ while (restartGame) {
 
     // Verifying the user's entry for a number of attemps allowed is a number greater than zero and equal to or less than the range they set
     while (!lives || lives < 1 || lives > rangeNum) {
-        lives = parseInt(prompt('Please enter a number of attemps allowed again:'));
+        lives = parseInt(prompt(`Please enter a number from 1 to ${rangeNum}:`));
         console.log(lives);
     }
 
