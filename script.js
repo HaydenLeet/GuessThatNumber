@@ -32,7 +32,6 @@ alert('Welcome to "GUESS THAT NUMBER!" Please click "OK" to start the game');
 while (restartGame) {
     // Asks the user to enter a number to set the upper bound for the random number that will be created.
     rangeNum = prompt('Please enter a maximum number for the range');
-    console.log(rangeNum);
 
     // Using the parseInt to attempt to convert the user's response into a number value
     rangeNum = parseInt(rangeNum);
@@ -45,7 +44,7 @@ while (restartGame) {
     }
 
     // Create the random number usingthe range number entered by the user
-    rangeNum = Math.floor(Math.random() * rangeNum) + 1;
+    randomNum = Math.floor(Math.random() * rangeNum) + 1;
     console.log(randomNum);
     
     // Prompts user to enter a number of attempts (lives) allowed (e.g. the number of guesses)
@@ -99,7 +98,7 @@ while (restartGame) {
         } else {
             guess = prompt(`Too high. You have ${lives}live(s) left.`)
         }
-
+    }
         // Asks the user with option to play again
         playAgain = prompt('Would you like to play again. Y for yes. N for no.');
 
@@ -119,4 +118,3 @@ while (restartGame) {
             }
         }
     }
-};
